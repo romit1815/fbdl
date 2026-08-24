@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Message Sent - Thank You | FBviddl</title>
+<meta name="description" content="Thank you for contacting FBviddl. We have received your message and will get back to you soon.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="application-name" content="FBviddl">
+<meta name="theme-color" content="#4f46e5">
+<link rel="canonical" href="https://fbviddl.com/send">
+<link rel="icon" type="image/png" href="https://fbviddl.com/favicon.png">
+<link rel="apple-touch-icon" href="https://fbviddl.com/favicon.png">
+<link rel="preload" href="/romitkrfb.css" as="style">
+<link rel="stylesheet" href="/romitkrfb.css">
+</head>
+<body>
+
+  <header class="header" id="siteHeader" role="banner">
+    <div class="container header-inner">
+      <a href="/" class="logo" aria-label="FBviddl - Home"><img src="https://fbviddl.com/fbviddl-logo.png" alt="FBviddl Logo" class="logo-icon" width="36" height="36" loading="eager">FBviddl</a>
+      <nav class="nav-desktop" role="navigation" aria-label="Primary Navigation">
+        <a href="/" class="nav-link">Home</a>
+        <a href="/blog" class="nav-link">Blog</a>
+        <a href="/about" class="nav-link">About</a>
+        <a href="/contact" class="nav-link">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobileNav">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobileNav" role="navigation" aria-label="Mobile Navigation" hidden>
+    <a href="/" class="nav-link">Home</a>
+    <a href="/blog" class="nav-link">Blog</a>
+    <a href="/about" class="nav-link">About</a>
+    <a href="/contact" class="nav-link">Contact</a>
+  </nav>
+
+  <main id="mainContent">
+    <section class="hero-section" id="downloader" aria-labelledby="heroHeading">
+      <div class="container">
+
+        <div class="hero-copy">
+          <div style="width:64px;height:64px;background-color:rgba(22,163,74,0.3);color:#4ade80;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 2.5rem;border:1px solid #166534;" aria-hidden="true">
+            <svg style="width:32px;height:32px;" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <h1 class="hero-title" id="heroHeading">Message Sent!</h1>
+          <p class="hero-subtitle hero-subtitle-sm">Thank you for reaching out. We've received your message and our team will get back to you as soon as possible.</p>
+          <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;margin-top:2rem;">
+            <a href="/" class="btn-primary">Go Back Home</a>
+            <a href="/#downloader" class="nf-btn-ghost">Download More</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="/" class="logo" aria-label="FBviddl Home"><img src="https://fbviddl.com/fbviddl-logo.png" alt="FBviddl Logo" class="logo-icon" width="36" height="36" loading="lazy">FBviddl</a>
+          <p>The fastest way to download public Facebook videos and reels. Simple, secure, and free for all devices.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Tools</h4>
+          <ul class="footer-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul class="footer-links">
+            <li><a href="/privacy">Privacy Policy</a></li>
+            <li><a href="/terms">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 FBviddl. All rights reserved.</div>
+        <div>FBviddl is not affiliated with or endorsed by Facebook or Meta.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script defer>
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const mobileNav = document.getElementById('mobileNav');
+    if (hamburgerBtn && mobileNav) {
+      hamburgerBtn.addEventListener('click', () => {
+        const isOpen = mobileNav.classList.contains('open');
+        if (isOpen) {
+          mobileNav.classList.remove('open');
+          mobileNav.setAttribute('hidden', '');
+          hamburgerBtn.setAttribute('aria-expanded', 'false');
+        } else {
+          mobileNav.classList.add('open');
+          mobileNav.removeAttribute('hidden');
+          hamburgerBtn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>
