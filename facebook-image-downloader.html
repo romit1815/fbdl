@@ -106,13 +106,12 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "What is a Facebook Image Downloader?", "acceptedAnswer": { "@type": "Answer", "text": "A Facebook Image Downloader is a tool that lets you save Facebook photos to your device using the image link, instead of taking a screenshot. FBviddl processes the link, previews the images, and lets you download the version currently available from Facebook." } },
-    { "@type": "Question", "name": "Is it possible to download multiple pictures from a single post?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. If the link leads to a post or album with multiple public images, FBviddl will display all available pictures for preview so you can download them one by one. This applies to a single post or album, not an entire account." } },
-    { "@type": "Question", "name": "Can Facebook photos be saved to my phone?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. FBviddl works in a mobile browser on Android and iPhone the same way it does on desktop. Copy the Facebook photo link, paste it, wait for processing, and download. The file saves to Photos, Gallery, or Downloads depending on your phone and browser." } },
-    { "@type": "Question", "name": "Can I download pictures from a Facebook Page or profile?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, if the specific photo is publicly accessible. Public Facebook Page photos and profile pictures set to public can be downloaded the same way as any other public image. If a photo is restricted or not set to public, the downloader will not be able to retrieve it." } },
-    { "@type": "Question", "name": "Can I download private Facebook photos?", "acceptedAnswer": { "@type": "Answer", "text": "No. Not requiring a login does not mean FBviddl can access private content. Photos visible to friends only, within a private group, or to a limited audience cannot be retrieved, and FBviddl does not attempt to bypass Facebook's privacy settings." } },
-    { "@type": "Question", "name": "Why won't a Facebook image download?", "acceptedAnswer": { "@type": "Answer", "text": "Most often it is due to private content, an incomplete link, a deleted post, or a link that points to a general profile or page rather than a specific image. If the link is valid but still fails, Facebook may have changed how it delivers that content." } },
-    { "@type": "Question", "name": "Can I use a Facebook image I downloaded legally?", "acceptedAnswer": { "@type": "Answer", "text": "Saving an image does not give you the right to use it any way you like. The original creator usually retains copyright even when the image is public. You may need their permission before using it publicly or commercially. Copyright rules vary by jurisdiction and intended use." } }
+    { "@type": "Question", "name": "What can I actually download with this?", "acceptedAnswer": { "@type": "Answer", "text": "Photos from public Facebook posts, Pages, and albums. If the post or album isn't public, the tool can't reach it." } },
+    { "@type": "Question", "name": "Can I get every photo in an album at once?", "acceptedAnswer": { "@type": "Answer", "text": "You'll see every photo the tool can detect from that link as a preview, and you pick which ones to save — it's not an automatic full-album export." } },
+    { "@type": "Question", "name": "Will the photo be the same quality as the original upload?", "acceptedAnswer": { "@type": "Answer", "text": "Not guaranteed. You get the version Facebook is currently serving at that link, which may be more compressed than the original file." } },
+    { "@type": "Question", "name": "Why does it say the image is unavailable?", "acceptedAnswer": { "@type": "Answer", "text": "Usually because the post or album is private, was deleted, or the link points to a general profile page instead of a specific photo." } },
+    { "@type": "Question", "name": "Do I need a Facebook account to use this?", "acceptedAnswer": { "@type": "Answer", "text": "No. But the photo itself still needs to be publicly accessible, whether you're logged in or not." } },
+    { "@type": "Question", "name": "Am I allowed to reuse a photo I download?", "acceptedAnswer": { "@type": "Answer", "text": "Saving it doesn't give you rights to it. The original poster or creator typically still owns it — treat reuse the way you'd treat any photo you didn't take yourself." } }
   ]
 }
 </script>
@@ -120,13 +119,13 @@
 <body>
   <header class="header" id="siteHeader" role="banner">
     <div class="container header-inner">
-      <a href="/" class="logo" aria-label="FBviddl - Home"><img src="https://fbviddl.com/fbviddl-logo.png" alt="FBviddl Logo" class="logo-icon" width="36" height="36" loading="eager">FBviddl</a>
+      <a href="https://fbviddl.com/" class="logo" aria-label="FBviddl - Home"><img src="https://fbviddl.com/fbviddl-logo.png" alt="FBviddl Logo" class="logo-icon" width="36" height="36" loading="eager">FBviddl</a>
       <nav class="nav-desktop" role="navigation" aria-label="Primary Navigation">
-        <a href="/" class="nav-link">Video Downloader</a>
-        <a href="/facebook-reel-downloader" class="nav-link">Reel Downloader</a>
-        <a href="/facebook-dp-downloader" class="nav-link">Profile DP Downloader</a>
-        <a href="https://follower.fbviddl.com" class="nav-link">Follower Counter</a>
-        <a href="/contact" class="nav-link">Contact</a>
+        <a href="https://fbviddl.com/" class="nav-link">Video Downloader</a>
+        <a href="https://fbviddl.com/facebook-reel-downloader" class="nav-link">Reel Downloader</a>
+        <a href="https://fbviddl.com/facebook-profile-dp-downloader" class="nav-link">Profile DP Downloader</a>
+        <a href="https://fbviddl.com/facebook-follower-counter" class="nav-link">Follower Counter</a>
+        <a href="https://fbviddl.com/contact" class="nav-link">Contact</a>
       </nav>
       <div class="header-actions">
         <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobileNav">
@@ -137,13 +136,13 @@
   </header>
 
   <nav class="mobile-nav" id="mobileNav" role="navigation" aria-label="Mobile Navigation" hidden>
-    <a href="/" class="nav-link">Video Downloader</a>
-    <a href="/facebook-reel-downloader" class="nav-link">Reel Downloader</a>
-    <a href="/facebook-image-downloader" class="nav-link">Image Downloader</a>
-    <a href="/facebook-dp-downloader" class="nav-link">Profile DP Downloader</a>
-    <a href="https://follower.fbviddl.com" class="nav-link">Follower Counter</a>
-    <a href="/blog" class="nav-link">Blog</a>
-    <a href="/contact" class="nav-link">Contact</a>
+    <a href="https://fbviddl.com/" class="nav-link">Video Downloader</a>
+    <a href="https://fbviddl.com/facebook-reel-downloader" class="nav-link">Reel Downloader</a>
+    <a href="https://fbviddl.com/facebook-image-downloader" class="nav-link">Image Downloader</a>
+    <a href="https://fbviddl.com/facebook-dp-downloader" class="nav-link">Profile DP Downloader</a>
+    <a href="https://fbviddl.com/facebook-follower-counter" class="nav-link">Follower Counter</a>
+    <a href="https://fbviddl.com/blog" class="nav-link">Blog</a>
+    <a href="https://fbviddl.com/contact" class="nav-link">Contact</a>
   </nav>
 
   <main id="mainContent">
@@ -155,20 +154,20 @@
         </div>
 
         <div class="tool-tabs" id="toolTabs" role="tablist" aria-label="Downloader Tools">
-          <a href="/" class="tool-tab" id="toolVideoTab" role="tab" aria-selected="false" aria-label="Video Downloader">
+          <a href="https://fbviddl.com/" class="tool-tab" id="toolVideoTab" role="tab" aria-selected="false" aria-label="Video Downloader">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="23 7 16 12 23 17 23 7"/><rect width="15" height="14" x="1" y="5" rx="2" ry="2"/></svg>
           </a>
-          <a href="/facebook-reel-downloader" class="tool-tab" id="toolReelTab" role="tab" aria-selected="false" aria-label="Reel Downloader">
+          <a href="https://fbviddl.com/facebook-reel-downloader" class="tool-tab" id="toolReelTab" role="tab" aria-selected="false" aria-label="Reel Downloader">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><path d="M7 3v18"/><path d="M3 7.5h4"/><path d="M3 12h18"/><path d="M3 16.5h4"/><path d="M17 3v18"/><path d="M17 7.5h4"/><path d="M17 16.5h4"/></svg>
           </a>
-          <a href="/facebook-image-downloader" class="tool-tab active" id="toolImageTab" role="tab" aria-selected="true" aria-current="page" aria-label="Image Downloader">
+          <a href="https://fbviddl.com/facebook-image-downloader" class="tool-tab active" id="toolImageTab" role="tab" aria-selected="true" aria-current="page" aria-label="Image Downloader">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
           </a>
-          <a href="/facebook-dp-downloader" class="tool-tab" id="toolDpTab" role="tab" aria-selected="false" aria-label="Profile DP Downloader">
+          <a href="https://fbviddl.com/facebook-dp-downloader" class="tool-tab" id="toolDpTab" role="tab" aria-selected="false" aria-label="Profile DP Downloader">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
           </a>
-          <a href="https://follower.fbviddl.com" class="tool-tab" id="toolGrowthTab" role="tab" aria-selected="false" aria-label="Follower Counter">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+          <a href="https://fbviddl.com/facebook-follower-counter" class="tool-tab" id="toolGrowthTab" role="tab" aria-selected="false" aria-label="Follower Counter">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 3v18h18"/><path d("m19 9-5 5-4-4-3 3"))/></svg>
           </a>
         </div>
 
@@ -233,46 +232,32 @@
       <div class="container">
         <article class="info-content">
 
-          <h2 id="infoHeading">Save Facebook Images Online</h2>
-          <p>FBviddl's Facebook Image Downloader allows you to save publicly accessible Facebook images directly to your device. Copy and paste a link to a public post, page photo, or profile picture — the tool retrieves the image or images depending on how many the link points to. No software download or Facebook login required.</p>
+          <h2 id="infoHeading">What You Can Pull From a Link</h2>
+          <p>This tool works with photos that anyone can already see without logging into Facebook: photos inside public posts, photos on public Pages, and public albums. If a link points to a profile or cover picture specifically, it'll work too — but if that's the only thing you're after, the <a href="https://fbviddl.com/facebook--dp-downloader">Facebook DP Downloader</a> is built around just that job and gets you there faster.</p>
 
-          <h2>Downloading vs. Screenshotting a Facebook Photo</h2>
-          <p>When you view a photo on Facebook, it is visible on your screen but not saved to your device. A screenshot captures everything visible at that moment — including cropped portions of the picture and other areas of the page — and the result is affected by your screen settings and resolution.</p>
-          <p>Downloading, on the other hand, retrieves the actual image file that Facebook provides, without any interface elements or screen-level modifications. FBviddl shows you a preview of the file before you save it. This does not guarantee the file is identical to the original upload, since Facebook processes and resizes images according to its own requirements.</p>
+          <h2>When a Link Has More Than One Photo</h2>
+          <p>Posts and albums often hold more than one image. When your link points to one of these, the tool shows every photo it can find from that link as a preview grid, and you choose which ones to save — not an automatic bulk download of the whole album, but a pick-what-you-want result. What shows up depends on the specific link and what's actually public at that address; a link to an album won't surface photos the album owner restricted from public view.</p>
 
-          <h2>What You Can Access With This Tool</h2>
-          <p>FBviddl works with publicly accessible Facebook photographs, including:</p>
+          <h2>Why Your Download Might Look Smaller Than the Post</h2>
+          <p>The file you get is the version Facebook is currently serving at that link — not a screenshot, and not an upscaled or enhanced copy. Facebook compresses and resizes photos for its own performance reasons, so what you download can be smaller or more compressed than what was originally uploaded. There's no way for any downloader, this one included, to add back detail Facebook already removed. If you're after the best version available, open the photo to its own full-size view on Facebook before copying the link — that URL points to a larger version than a thumbnail in a feed.</p>
+
+          <h2>Public Photos Only</h2>
+          <p>"Public" means anyone can open it without being logged in or friends with the poster. If a photo is restricted to friends, shared in a closed or secret group, or limited to a specific audience, this tool has no way to reach it — it sees exactly what a logged-out visitor sees, nothing more. That's not a setting you can toggle around; it's how the tool works by design.</p>
+
+          <h2>Getting It Onto Your Phone or Computer</h2>
+          <p>The steps are the same wherever you're doing this: copy the post or photo link from Facebook, paste it above, wait for the preview, then download. On a computer, saved photos land in your browser's downloads folder. On a phone, check your Photos or Gallery app first, then your Downloads or Files app if you don't see it there — where it lands depends on your browser and device settings, not on this tool.</p>
+
+          <h2>If Nothing Downloads</h2>
+          <p>A few things typically cause this:</p>
           <ul>
-            <li>Photos from public albums and posts</li>
-            <li>Images from public Facebook pages</li>
-            <li>Profile pictures from public Facebook profiles and pages</li>
-            <li>Cover photos from public profiles and pages</li>
+            <li>The photo or post is private — friends-only, group-restricted, or limited to a specific audience.</li>
+            <li>The post was deleted or the link is outdated.</li>
+            <li>The link points to a profile or feed generally, not a specific photo or album — try opening the exact photo first, then copying that page's link.</li>
+            <li>Facebook changed how it serves that content. This happens occasionally; if a link that used to work suddenly doesn't, that's usually why.</li>
           </ul>
-          <p>When a post or album contains more than one image, the tool can display multiple photos at once. However, the ability to retrieve each image depends on the specific link and its privacy settings.</p>
 
-          <h2>Public vs. Private Facebook Photos</h2>
-          <p>"Public" means the post can be viewed by anyone — including people who are not logged into Facebook and are not the user's friends. "Private" or restricted refers to posts visible only to friends, shared in private or closed groups, limited to a specific set of people, or otherwise restricted from public view.</p>
-          <p>The fact that FBviddl does not require a Facebook login does not mean it can access private content. It works only with images that have been made publicly visible, and it has no way to bypass Facebook's privacy settings. Even with a direct link, a photo restricted to friends, a group, or a limited audience will not be accessible.</p>
-
-          <h2>Image Quality You Can Expect</h2>
-          <p>Our site retrieves the current public version of the image from Facebook without enhancing or upgrading the quality. Facebook resizes and compresses images for performance, so the downloaded file may be smaller or more compressed than the original upload. If you open the photo fully before copying the link, a higher-resolution version may be available. Since Facebook controls the image files it serves, there is no guarantee you will receive the original resolution or the highest available quality.</p>
-
-          <h2>Downloading Facebook Photos on Phone and Computer</h2>
-          <p>Because FBviddl works through a web browser, it works on any device — Android phones, iPhones, Windows PCs, and Macs — by following the same steps: copy the URL, process it, and download. Where the file saves depends on your device and browser. On a computer, it goes to the Downloads folder. On a phone, it may appear in the Photos or Gallery app or in the Downloads app, depending on the device and browser settings.</p>
-
-          <h2>Reasons an Image Won't Download</h2>
-          <p>Some common reasons a Facebook image may fail to download:</p>
-          <ul>
-            <li>The image or post is private — only visible to friends or a specific audience.</li>
-            <li>The post has been deleted or removed from the platform.</li>
-            <li>The link is incomplete or outdated.</li>
-            <li>The link points to a general profile or page rather than a specific image or album.</li>
-            <li>Facebook has changed the way it serves that type of content.</li>
-          </ul>
-          <p>An occasional failure does not always mean something is wrong — Facebook controls what happens to every piece of content, and that can change at any time.</p>
-
-          <h2>Copyright and Proper Usage</h2>
-          <p>Saving an image from Facebook does not give you ownership or any copyright over it. The creator or original uploader typically retains ownership, even when the image is publicly visible. Saving an image for personal reference is not the same as reposting, publishing, modifying, or using it commercially. Whether a specific image is subject to copyright and how that applies depends on the image, the creator, your location, and your intended use.</p>
+          <h2>Using a Downloaded Photo</h2>
+          <p>Saving a photo doesn't transfer ownership of it to you. The person who posted it — or whoever originally took or holds rights to it — typically still owns it, public or not. Keeping a copy for yourself is different from reposting it, editing it, or using it commercially; those uses depend on the photo, the photographer, and where you are, and this tool doesn't make that determination for you.</p>
 
         </article>
       </div>
@@ -288,71 +273,61 @@
 
           <div class="faq-item active" role="listitem">
             <button type="button" class="faq-question" aria-expanded="true" aria-controls="faqAnswer1">
-              <span>What is a Facebook Image Downloader?</span>
+              <span>What can I actually download with this?</span>
               <svg class="faq-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
             </button>
             <div id="faqAnswer1" class="faq-answer" role="region">
-              <p>A Facebook Image Downloader is a tool that lets you save Facebook photos to your device using the image link, instead of taking a screenshot. FBviddl processes the link, previews the images, and lets you download the version currently available from Facebook.</p>
+              <p>Photos from public Facebook posts, Pages, and albums. If the post or album isn't public, the tool can't reach it.</p>
             </div>
           </div>
 
           <div class="faq-item" role="listitem">
             <button type="button" class="faq-question" aria-expanded="false" aria-controls="faqAnswer2">
-              <span>Is it possible to download multiple pictures from a single post?</span>
+              <span>Can I get every photo in an album at once?</span>
               <svg class="faq-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
             </button>
             <div id="faqAnswer2" class="faq-answer" role="region" hidden>
-              <p>Yes. If the link leads to a post or album with multiple public images, FBviddl will display all available pictures for preview so you can download them one by one. This applies to a single post or album, not an entire account.</p>
+              <p>You'll see every photo the tool can detect from that link as a preview, and you pick which ones to save — it's not an automatic full-album export.</p>
             </div>
           </div>
 
           <div class="faq-item" role="listitem">
             <button type="button" class="faq-question" aria-expanded="false" aria-controls="faqAnswer3">
-              <span>Can Facebook photos be saved to my phone?</span>
+              <span>Will the photo be the same quality as the original upload?</span>
               <svg class="faq-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
             </button>
             <div id="faqAnswer3" class="faq-answer" role="region" hidden>
-              <p>Yes. FBviddl works in a mobile browser on Android and iPhone the same way it does on desktop. Copy the Facebook photo link, paste it, wait for processing, and download. The file saves to Photos, Gallery, or Downloads depending on your phone and browser.</p>
+              <p>Not guaranteed. You get the version Facebook is currently serving at that link, which may be more compressed than the original file.</p>
             </div>
           </div>
 
           <div class="faq-item" role="listitem">
             <button type="button" class="faq-question" aria-expanded="false" aria-controls="faqAnswer4">
-              <span>Can I download pictures from a Facebook Page or profile?</span>
+              <span>Why does it say the image is unavailable?</span>
               <svg class="faq-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
             </button>
             <div id="faqAnswer4" class="faq-answer" role="region" hidden>
-              <p>Yes, if the specific photo is publicly accessible. Public Facebook Page photos and profile pictures set to public can be downloaded the same way as any other public image. If a photo is restricted or the profile picture is not set to public, the downloader will not be able to retrieve it.</p>
+              <p>Usually because the post or album is private, was deleted, or the link points to a general profile page instead of a specific photo.</p>
             </div>
           </div>
 
           <div class="faq-item" role="listitem">
             <button type="button" class="faq-question" aria-expanded="false" aria-controls="faqAnswer5">
-              <span>Can I download private Facebook photos?</span>
+              <span>Do I need a Facebook account to use this?</span>
               <svg class="faq-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
             </button>
             <div id="faqAnswer5" class="faq-answer" role="region" hidden>
-              <p>No. Not requiring a login does not mean FBviddl can access private content. Photos visible to friends only, within a private group, or to a limited audience cannot be retrieved, and FBviddl does not attempt to bypass Facebook's privacy settings.</p>
+              <p>No. But the photo itself still needs to be publicly accessible, whether you're logged in or not.</p>
             </div>
           </div>
 
           <div class="faq-item" role="listitem">
             <button type="button" class="faq-question" aria-expanded="false" aria-controls="faqAnswer6">
-              <span>Why won't a Facebook image download?</span>
+              <span>Am I allowed to reuse a photo I download?</span>
               <svg class="faq-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
             </button>
             <div id="faqAnswer6" class="faq-answer" role="region" hidden>
-              <p>Most often it is due to private content, an incomplete link, a deleted post, or a link that points to a general profile or page rather than a specific image. If the link is valid and accessible but still fails, Facebook may have changed how it delivers that content.</p>
-            </div>
-          </div>
-
-          <div class="faq-item" role="listitem">
-            <button type="button" class="faq-question" aria-expanded="false" aria-controls="faqAnswer7">
-              <span>Can I use a Facebook image I downloaded legally?</span>
-              <svg class="faq-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div id="faqAnswer7" class="faq-answer" role="region" hidden>
-              <p>Saving an image does not give you the right to use it any way you like. The original creator usually retains copyright even when the image is public. You may need their permission before using it publicly or commercially. Copyright rules vary by jurisdiction and intended use.</p>
+              <p>Saving it doesn't give you rights to it. The original poster or creator typically still owns it — treat reuse the way you'd treat any photo you didn't take yourself.</p>
             </div>
           </div>
 
@@ -365,17 +340,15 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-col">
-          <a href="/" class="logo" aria-label="FBviddl Home"><img src="https://fbviddl.com/fbviddl-logo.png" alt="FBviddl Logo" class="logo-icon" width="36" height="36" loading="lazy">FBviddl</a>
+          <a href="https://fbviddl.com/" class="logo" aria-label="FBviddl Home"><img src="https://fbviddl.com/fbviddl-logo.png" alt="FBviddl Logo" class="logo-icon" width="36" height="36" loading="lazy">FBviddl</a>
           <p>The fastest way to download public Facebook videos, reels, images, and profile pictures. Simple, secure, and free for all devices.</p>
         </div>
        <div class="footer-col">
           <h4>Resources</h4>
           <ul class="footer-links">
-            <li><a href="/facebook-video-downloader">Video Downloader</a></li>
-            <li><a href="/facebook-reel-downloader">Reel Downloader</a></li>
-            <li><a href="/facebook-image-downloader">Image Downloader</a></li>
-            <li><a href="/facebook-dp-downloader">Profile DP Downloader</a></li>
-            <li><a href="https://follower.fbviddl.com">Follower Counter</a></li>
+            <li><a href="https://threadsgrab.com/threads-image-downloader">threads Image Downloader</a></li>
+            <li><a href="https://twitter.threadsgrab.com/twitter-image-downloader">Twitter Image Downloader</a></li>
+           
           </ul>
         </div>
 
@@ -383,17 +356,16 @@
         <div class="footer-col">
           <h4>Company</h4>
           <ul class="footer-links">
-            <li><a href="/">Home</a></li>
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li><a href="https://fbviddl.com/blog">Blog</a></li>
+            <li><a href="https://fbviddl.com/about">About</a></li>
+            <li><a href="https://fbviddl.com/contact">Contact</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h4>Legal</h4>
           <ul class="footer-links">
-            <li><a href="/privacy">Privacy Policy</a></li>
-            <li><a href="/terms">Terms of Service</a></li>
+            <li><a href="https://fbviddl.com/privacy">Privacy Policy</a></li>
+            <li><a href="https://fbviddl.com/terms">Terms of Service</a></li>
           </ul>
         </div>
       </div>
@@ -404,6 +376,6 @@
     </div>
   </footer>
 
-  <script src="/romitscript.min/romitimg.js" defer></script>
+  <script src="/romitimg.js" defer></script>
 </body>
 </html>

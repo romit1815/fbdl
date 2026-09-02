@@ -26,7 +26,6 @@
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@fbviddl">
 <meta name="twitter:url" content="https://fbviddl.com/facebook-dp-downloader">
 <meta name="twitter:title" content="Facebook DP Downloader – Download Facebook Profile Pictures">
 <meta name="twitter:description" content="Paste a public Facebook profile link into FBviddl to preview the profile picture and save it in the best quality available, right from your browser.">
@@ -103,15 +102,46 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "What is a Facebook DP Downloader?", "acceptedAnswer": { "@type": "Answer", "text": "A tool that allows you to input a Facebook profile URL and get the profile picture without needing to log into Facebook or manually save the photo from the page." } },
-    { "@type": "Question", "name": "Can I download a Facebook profile picture?", "acceptedAnswer": { "@type": "Answer", "text": "If the profile and picture are set to public, yes. Paste the profile link into FBviddl and you'll see a preview of the photo before downloading it." } },
-    { "@type": "Question", "name": "Is it possible to download Facebook profile pictures in HD?", "acceptedAnswer": { "@type": "Answer", "text": "FBviddl uses the quality that Facebook provides and doesn't enhance or increase it. Quality depends on what the original profile owner uploaded and what Facebook delivers publicly." } },
-    { "@type": "Question", "name": "Can you use FBviddl on mobile devices?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, on Android and iPhone browsers, and on desktop too. No special app is needed — everything runs through the website." } },
-    { "@type": "Question", "name": "Do I need to log in to Facebook?", "acceptedAnswer": { "@type": "Answer", "text": "No. FBviddl uses only public profile links and does not require a Facebook account." } },
-    { "@type": "Question", "name": "Can I download a profile photo from a private account?", "acceptedAnswer": { "@type": "Answer", "text": "No. If the profile is private or the picture is restricted, FBviddl will not be able to download the photo — just as a visitor who is not logged in cannot view it." } },
-    { "@type": "Question", "name": "Is it possible to download another person's Facebook profile picture?", "acceptedAnswer": { "@type": "Answer", "text": "If their profile picture is publicly visible, it can be saved. What matters more is the intended use — don't use someone else's profile picture to impersonate them, harass them, or create an account in their name." } },
-    { "@type": "Question", "name": "Where is the downloaded Facebook DP saved?", "acceptedAnswer": { "@type": "Answer", "text": "It is saved in the same folder your browser uses for downloads — typically the Downloads folder on desktop, or the photo gallery or Files app on a smartphone, depending on your browser and its settings." } },
-    { "@type": "Question", "name": "Why isn't the profile picture downloading?", "acceptedAnswer": { "@type": "Answer", "text": "Common reasons include an incorrect profile link, the profile being set to private, a temporary internet interruption, or Facebook's servers being momentarily unavailable. Check the link and try again." } }
+    {
+      "@type": "Question",
+      "name": "Does this work with private or friends-only profiles?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. It only works with pictures that are already visible to someone who is not logged in — the same picture you would see when opening the profile link yourself."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it possible to download Facebook profile pictures in HD?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "FBviddl uses the quality that Facebook provides and does not enhance or increase it. The quality depends on what the original profile owner uploaded and what Facebook delivers publicly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you use FBviddl on mobile devices?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, on Android and iPhone browsers, and on desktop too. No special app is needed — everything runs through the website."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where is the downloaded Facebook DP saved?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is saved in the same folder your browser uses for downloads — typically the Downloads folder on desktop, or the photo gallery or Files app on a smartphone, depending on your browser and settings."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why isn't the profile picture downloading?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common reasons include an incorrect profile link, the profile being set to private, a temporary internet interruption, or Facebook's servers being momentarily unavailable. Check the link and try again."
+      }
+    }
   ]
 }
 </script>
@@ -124,7 +154,7 @@
         <a href="/" class="nav-link">Video Downloader</a>
         <a href="/facebook-reel-downloader" class="nav-link">Reel Downloader</a>
         <a href="/facebook-image-downloader" class="nav-link">Image Downloader</a>
-        <a href="https://follower.fbviddl.com" class="nav-link">Follower Counter</a>
+        <a href="https://fbviddl.com/facebook-follower-counter" class="nav-link">Follower Counter</a>
         <a href="/contact" class="nav-link">Contact</a>
       </nav>
       <div class="header-actions">
@@ -140,7 +170,7 @@
     <a href="/facebook-reel-downloader" class="nav-link">Reel Downloader</a>
     <a href="/facebook-image-downloader" class="nav-link">Image Downloader</a>
     <a href="/facebook-dp-downloader" class="nav-link">Profile DP Downloader</a>
-    <a href="https://follower.fbviddl.com" class="nav-link">Follower Counter</a>
+    <a href="https://fbviddl.com/facebook-follower-counter" class="nav-link">Follower Counter</a>
     <a href="/blog" class="nav-link">Blog</a>
     <a href="/about" class="nav-link">About</a>
     <a href="/contact" class="nav-link">Contact</a>
@@ -167,7 +197,7 @@
           <a href="/facebook-dp-downloader" class="tool-tab active" id="toolDpTab" role="tab" aria-selected="true" aria-current="page" aria-label="Profile DP Downloader">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
           </a>
-          <a href="https://follower.fbviddl.com" class="tool-tab" id="toolGrowthTab" role="tab" aria-selected="false" aria-label="Follower Counter">
+          <a href="https://fbviddl.com/facebook-follower-counter" class="tool-tab" id="toolGrowthTab" role="tab" aria-selected="false" aria-label="Follower Counter">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
           </a>
         </div>
@@ -221,17 +251,17 @@
         </div>
         <div class="steps-grid">
           <article class="step-card">
-            <div class="step-icon"><img src="https://fbviddl.com/media/download-fb-dp.jpg" loading="lazy" decoding="async" width="60" height="60" alt="Open facebook profile"></div>
+            <div class="step-icon"><img src="https://fbviddl.com/media/download-fb-dp.jpg" loading="lazy" decoding="async" width="60" height="60" alt="Open a Facebook profile"></div>
             <h3>Step 1: Open the Facebook profile</h3>
             <p>Go to the public profile on Facebook whose DP you want to save. And copy the profile link from the 3 dots menu or the address bar.</p>
           </article>
           <article class="step-card">
-            <div class="step-icon"><img src="https://fbviddl.com/media/fb-dp-downloader.jpg" loading="lazy" decoding="async" width="60" height="60" alt="Copy facebook profile link"></div>
+            <div class="step-icon"><img src="https://fbviddl.com/media/fb-dp-downloader.jpg" loading="lazy" decoding="async" width="60" height="60" alt="Copy a Facebook profile link"></div>
             <h3>Step 2: Paste the profile link</h3>
             <p>Paste the copied profile link into the input box above.</p>
           </article>
           <article class="step-card">
-            <div class="step-icon"><img src="https://fbviddl.com/media/facebook-profile-download.jpg" loading="lazy" decoding="async" width="60" height="60" alt="Download facebook dp"></div>
+            <div class="step-icon"><img src="https://fbviddl.com/media/facebook-profile-download.jpg" loading="lazy" decoding="async" width="60" height="60" alt="Download Facebook DP"></div>
             <h3>Step 3: Save the profile picture</h3>
             <p>Click the Download button and save the profile picture to your device.</p>
           </article>
@@ -243,16 +273,22 @@
       <div class="container">
         <article class="info-content">
 
-          <h2 id="infoHeading">Facebook Profile Picture Downloader Online</h2>
-          <p>Simply paste a link to a Facebook profile into FBviddl, and it will show you the profile picture so you can view and save it. There's no need to install any app or extension — just copy a link and click a few buttons. If the profile picture is available for public access, it downloads just like any other file through your web browser.</p>
-          <p>If you want to download and save a profile picture set to "public" — either your own picture or one displayed publicly — the following sections explain how the service works, its capabilities and limitations, and things to keep in mind before using the image.</p>
-
-          <h2>Download Facebook DP in Your Browser</h2>
-          <p>FBviddl runs entirely in the browser tab you're already using — nothing to install, no separate app for your phone or computer. You paste a URL, the tool fetches what's publicly available, and you download the result the normal way.</p>
-          <p>Because it's browser-based rather than a native app, the same workflow carries over whether you're on a laptop or a phone: open Facebook, grab the profile link, switch to FBviddl, paste it in.</p>
-         
-          <h2>What Is a Facebook DP Downloader?</h2>
-          <p>A DP downloader takes a link to someone's profile and returns just their profile picture — at whatever quality Facebook makes available for that image — instead of you opening the profile and trying to save the photo manually. People look for one when they want the picture specifically, not an album or the whole timeline, or when the version shown on the page is smaller than what's actually stored.</p>
+          <h2 id="download-facebook-profile-pictures">Download Facebook Profile Pictures</h2>
+          <p>Copy the link to a Facebook profile—from the address bar, or from the "Copy link to profile" option in Facebook's own menu and paste it into the field above. FBVidDl loads the picture Facebook is currently serving for that profile and shows you a preview. From there, you can save it to your device.
+This only works with profiles you could already view without logging in. If a profile requires a login to see anything, its picture isn't something this tool — or any similar tool — can retrieve.
+</p>
+        <h2 id="about-image-size-and-quality">About image size and quality</h2>
+        <p>Facebook stores and serves profile pictures at different sizes depending on the device, the profile's own settings, and how long ago the picture was uploaded. FBVidDl pulls the largest version Facebook makes available for that link at the time you request it — it doesn't create detail that isn't already in the source image, and it can't guarantee a specific resolution.
+        If a profile picture looks small or slightly compressed after downloading, that's coming from how Facebook is serving the image for that account, not a limitation being added by this tool.
+        </p>
+        <h2 id="if-a-profile-picture-won't-load">If a profile picture won't load</h2>
+        <p>A few things cause this, and they're usually specific:</p>
+        <ul>
+          <li><strong>The link isn't a profile link.</strong> Post, photo, or page links point to a different piece of content  try the <a href="https://fbviddl.com/facebook-image-downloader">Facebook Image Downloader</a> for those instead.</li>
+          <li><strong>The profile requires a login to view.</strong> If you can't see the picture by opening the link yourself in a private/incognito window, the tool won't be able to either.</li>
+          <li><strong>The profile no longer exists, or the username changed.</strong> Re-copy the link directly from the profile.</li>
+          <li><strong>A temporary issue on Facebook's side.</strong> Wait a minute and try again.</li>
+        </ul>
 
           <h2>Facebook Profile Photo Downloader Features</h2>
           <ul>
@@ -264,15 +300,7 @@
           </ul>
           <p>FBviddl does not access private profiles, does not enhance resolution beyond what Facebook's servers provide, and does not retrieve any picture that a logged-out visitor could not already see. If a feature isn't listed above, it should be assumed that it is not available.</p>
 
-          <h2>Can I Download Any Facebook Profile Picture?</h2>
-          <p>Downloading is only possible if the Facebook profile picture is set to public. Most profiles have public pictures by default, but some users choose to restrict their picture to a limited audience. In that case, FBviddl will find nothing to download because the profile picture is not accessible to anyone without the appropriate access.</p>
-
-          <h2>Does the Facebook profile Downloader Work on Mobile?</h2>
-          <p>As it is web-based rather than an installed application, it works on Android phones, iPhones, and computers — provided you can open a web page in a browser. No special configuration is needed for mobile use.</p>
-
-          <h2>Do I Need to Install an App?</h2>
-          <p>No. FBviddl does not have an app or browser plugin — all operation is done directly on the website. If you find something called an "FBviddl app," it is not from this platform.</p>
-
+        
           <h2>Facebook DP Downloader vs Screenshot</h2>
           <p>A screenshot captures what appears on screen at the time it is taken, including the surrounding interface. The image is limited to what Facebook displays, which is usually a small, constrained version. Downloading the image skips the extra steps of cropping and resizing a screenshot and instead gives you a copy of the actual file.</p>
           <p>That said, sometimes a screenshot is all you need. When image quality isn't a priority, taking a screenshot has no real drawbacks.</p>
@@ -294,21 +322,11 @@
 
           <div class="faq-item active" role="listitem">
             <button type="button" class="faq-question" aria-expanded="true" aria-controls="faqAnswer1">
-              <span>What is a Facebook DP Downloader?</span>
+              <span>Does this work with private or friends-only profiles? </span>
               <svg class="faq-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
             </button>
             <div id="faqAnswer1" class="faq-answer" role="region">
-              <p>A tool that allows you to input a Facebook profile URL and get the profile picture without needing to log into Facebook or manually save the photo from the page.</p>
-            </div>
-          </div>
-
-          <div class="faq-item" role="listitem">
-            <button type="button" class="faq-question" aria-expanded="false" aria-controls="faqAnswer2">
-              <span>Can I download a Facebook profile picture?</span>
-              <svg class="faq-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div id="faqAnswer2" class="faq-answer" role="region" hidden>
-              <p>If the profile and picture are set to public, yes. Paste the profile link into FBviddl and you'll see a preview of the photo before downloading it.</p>
+              <p>No. It only works with pictures that are already visible to someone who isn't logged in — the same picture you'd see by opening the profile link yourself.</p>
             </div>
           </div>
 
@@ -331,36 +349,7 @@
               <p>Yes, on Android and iPhone browsers, and on desktop too. No special app is needed — everything runs through the website.</p>
             </div>
           </div>
-
-          <div class="faq-item" role="listitem">
-            <button type="button" class="faq-question" aria-expanded="false" aria-controls="faqAnswer5">
-              <span>Do I need to log in to Facebook?</span>
-              <svg class="faq-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div id="faqAnswer5" class="faq-answer" role="region" hidden>
-              <p>No. FBviddl uses only public profile links and does not require a Facebook account.</p>
-            </div>
-          </div>
-
-          <div class="faq-item" role="listitem">
-            <button type="button" class="faq-question" aria-expanded="false" aria-controls="faqAnswer6">
-              <span>Can I download a profile photo from a private account?</span>
-              <svg class="faq-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div id="faqAnswer6" class="faq-answer" role="region" hidden>
-              <p>No. If the profile is private or the picture is restricted, FBviddl will not be able to download the photo — just as a visitor who is not logged in cannot view it.</p>
-            </div>
-          </div>
-
-          <div class="faq-item" role="listitem">
-            <button type="button" class="faq-question" aria-expanded="false" aria-controls="faqAnswer7">
-              <span>Is it possible to download another person's Facebook profile picture?</span>
-              <svg class="faq-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div id="faqAnswer7" class="faq-answer" role="region" hidden>
-              <p>If their profile picture is publicly visible, it can be saved. What matters more than the technical ability is the intended use. Don't use someone else's profile picture to impersonate them, harass them, or create an account in their name.</p>
-            </div>
-          </div>
+         
 
           <div class="faq-item" role="listitem">
             <button type="button" class="faq-question" aria-expanded="false" aria-controls="faqAnswer8">
@@ -397,17 +386,14 @@
         <div class="footer-col">
           <h4>Other Tools</h4>
           <ul class="footer-links">
-            <li><a href="/">Video Downloader</a></li>
-            <li><a href="/facebook-reel-downloader">Reel Downloader</a></li>
-            <li><a href="/facebook-image-downloader">Image Downloader</a></li>
-            <li><a href="/facebook-dp-downloader">Profile DP Downloader</a></li>
-            <li><a href="https://follower.fbviddl.com">Follower Counter</a></li>
+            <li><a href="https://threadsgrab.com/threads-profile-picture-downloader">Threads Downloader</a></li>
+            <li><a href="https://twitter.threadsgrab.com/twitter-dp-downloader">Twitter dp Downloader</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h4>Support</h4>
           <ul class="footer-links">
-            <li><a href="/">Home</a></li>
+            <li><a href="https://fbviddl.com/">Home</a></li>
             <li><a href="/blog">Blog</a></li>
             <li><a href="/about">About</a></li>
             <li><a href="/contact">Contact</a></li>
