@@ -100,21 +100,21 @@
         <article class="info-content">
           <h2 id="infoHeading">Privacy Policy — FBviddl</h2>
           <p>This Privacy Policy explains how FBviddl ("we", "our", or "the service") collects, uses, and protects information when you use any tool on <strong>fbviddl.com</strong> — including the <a href="/">Facebook Video Downloader</a>, <a href="https://reel.fbviddl.com">Reel Downloader</a>, <a href="https://image.fbviddl.com">Image Downloader</a>, <a href="https://dp.fbviddl.com">DP Downloader</a>, and <a href="https://follower.fbviddl.com">Follower Counter</a>. By using FBviddl, you acknowledge that you have read and understood this policy.</p>
-          <p>FBviddl is designed with minimal data collection as a core principle. We do not require registration, do not request personal information, and do not sell or share user data with advertisers or third-party marketing services.</p>
+          <p>FBviddl does not require registration. The downloader tools do not ask for your name, email address, or Facebook credentials. The contact form is separate: if you choose to use it, it sends the details you provide to FormSubmit so your message can be delivered to us. Google Analytics and a third-party advertising script also load on some pages; see the sections below for details.</p>
 
           <h2>1. Information We Do Not Collect</h2>
-          <p>FBviddl does not collect, store, or process:</p>
+          <p>When you use the downloader tools, FBviddl does not ask you to provide:</p>
           <ul>
-            <li>Your name, email address, phone number, or any other personally identifiable information</li>
+            <li>Your name, email address, or phone number (unless you voluntarily submit them through the contact form)</li>
             <li>Your Facebook account credentials, login tokens, or session data</li>
             <li>The videos, images, or profile pictures you download through this service</li>
             <li>Your payment information (FBviddl is and always has been free)</li>
             <li>Your precise location data</li>
           </ul>
-          <p>No account creation is required to use any tool on FBviddl. You are anonymous to us throughout every session.</p>
+          <p>No account is required. Third-party analytics, advertising, and infrastructure providers may receive technical information as described below.</p>
 
           <h2>2. Information We Process Temporarily</h2>
-          <p>When you submit a Facebook URL to any FBviddl tool, that URL is sent to our backend infrastructure (hosted on Cloudflare Workers) for processing. The URL is used solely to fetch the requested media or data from Facebook's public-facing content delivery system and return the result to your browser. Once the result has been delivered, the submitted URL is not retained in any storage system, database, or log. We do not associate submitted URLs with any user identity or IP address in any persistent record.</p>
+          <p>When you submit a Facebook URL, the page sends it to a Cloudflare Worker to process and return the requested result. Do not include private information in a submitted URL. Cloudflare may process request data, including technical connection information, under its own policies. This site does not use submitted URLs to create user accounts or profiles; the site code does not establish how long infrastructure providers retain request logs.</p>
 
           <h2>3. Automatically Collected Technical Data</h2>
           <p>Like most web services, FBviddl's infrastructure may receive standard browser-level request data when you visit the site, including:</p>
@@ -125,22 +125,25 @@
             <li>Referring URL (the page you came from)</li>
             <li>Pages visited on fbviddl.com and approximate timestamps</li>
           </ul>
-          <p>This technical data is aggregated and anonymised. It is used to monitor site performance, detect abuse, and understand general usage patterns. It is not used to build individual user profiles and is not shared with third-party advertising networks.</p>
+          <p>Google Analytics is configured on the home page, the Hindi home page, and several downloader pages to measure site usage. Google says its default Analytics implementation can collect page interaction, browser and device information, approximate location, and use first-party cookies. A third-party advertising script also loads on the home page. These providers handle information under their own policies; see <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a> and the advertising provider at <a href="https://highrevenueformat.com" target="_blank" rel="noopener noreferrer">highrevenueformat.com</a>.</p>
 
           <h2>4. Cookies</h2>
-          <p>FBviddl uses only minimal, technically necessary cookies to ensure the site functions correctly — for example, to preserve your browser session state during a download. We do not use tracking cookies, advertising cookies, or cross-site tracking technologies. We do not use Google Analytics or any similar user-tracking analytics service on fbviddl.com.</p>
+          <p>The follower counter stores the selected Facebook handle, count, initial count, polling total, and recent count history in first-party cookies named <code>fbctr_target</code>, <code>fbctr_count</code>, <code>fbctr_initial</code>, <code>fbctr_ticks</code>, and <code>fbctr_history</code>. The code sets these cookies to expire after seven days so the counter can restore the last session. Google Analytics may also use first-party measurement cookies, and the advertising script may use cookies or similar technologies. You can block or clear cookies in your browser; this may stop the counter from restoring its previous state.</p>
           <p>You can disable or clear cookies at any time through your browser settings. Doing so will not prevent you from using any FBviddl tool.</p>
 
           <h2>5. No Media Storage</h2>
-          <p>FBviddl does not store, cache, host, or redistribute any media file you download. Every video, image, reel, or profile picture retrieved through FBviddl is fetched directly from Facebook's public content delivery network (CDN) and streamed directly to your browser. No copy of that media file is written to any FBviddl server, database, or storage system at any point. Once your browser receives the download, the transaction is complete and no record of it remains on our side.</p>
+          <p>FBviddl does not provide a media library or ask you to upload files. A submitted link is processed by our Cloudflare Worker and media is returned to your browser. This site does not create a user account or media archive, but the front-end code cannot establish whether infrastructure providers temporarily process or retain request data; see the provider policies above.</p>
 
           <h2>6. Third-Party Infrastructure</h2>
-          <p>FBviddl uses the following third-party infrastructure providers to deliver the service:</p>
+          <p>FBviddl uses the following third-party services:</p>
           <ul>
             <li><strong>Cloudflare Workers</strong> — Our backend processing runs on Cloudflare's serverless platform. Cloudflare handles network-level security, DDoS protection, and global routing. See <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer">Cloudflare's Privacy Policy</a>.</li>
-            <li><strong>Content Delivery Networks</strong> — Static assets (CSS, JavaScript, fonts) may be served through CDN providers for performance. These providers receive standard HTTP request headers but no personal data beyond what any web request contains.</li>
+            <li><strong>Google Analytics</strong> — Measures site usage on the pages where the tag is installed. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a>.</li>
+            <li><strong>Advertising script</strong> — The home page loads a script from highrevenueformat.com. The provider may receive browser request data and may use cookies or similar technologies; see <a href="https://highrevenueformat.com" target="_blank" rel="noopener noreferrer">highrevenueformat.com</a>.</li>
+            <li><strong>FormSubmit</strong> — The contact form sends submitted name, email, subject, and message to FormSubmit for delivery to our email inbox. FormSubmit says it retains submissions for 30 days. See its <a href="https://formsubmit.co/privacy.pdf" target="_blank" rel="noopener noreferrer">privacy policy</a> and <a href="https://formsubmit.co/help" target="_blank" rel="noopener noreferrer">retention information</a>.</li>
+            <li><strong>Content Delivery Networks</strong> — Static assets may be served through CDN providers, which receive standard HTTP request headers.</li>
           </ul>
-          <p>We do not use any third-party advertising networks, social media tracking pixels, or data brokerage services on fbviddl.com.</p>
+          <p>We do not intentionally install social media tracking pixels or use data brokers. The Google Analytics and advertising scripts described above are third-party services.</p>
 
           <h2>7. Children's Privacy</h2>
           <p>FBviddl is a general-purpose web utility and is not directed at children under the age of 13. We do not knowingly collect any personal information from children. If you believe a child under 13 has submitted personal information through this site, please <a href="/contact">contact us</a> and we will take immediate steps to remove it.</p>
@@ -149,7 +152,7 @@
           <p>All connections to fbviddl.com are secured using HTTPS (TLS encryption). This means data transmitted between your browser and our servers cannot be intercepted or read by a third party. Our backend infrastructure is hosted on enterprise-grade infrastructure with access controls, monitoring, and security policies in place. Because we collect minimal data to begin with, the risk surface for data exposure is inherently limited.</p>
 
           <h2>9. Your Rights</h2>
-          <p>Because FBviddl does not collect or store personally identifiable information, there is nothing for us to delete, correct, or export on your behalf under data protection frameworks such as GDPR or CCPA. If you have cookies stored in your browser from fbviddl.com, you can delete them directly through your browser settings at any time.</p>
+          <p>If you submitted a message through the contact form and want us to delete or correct the copy in our inbox, contact us with enough information to locate it. FormSubmit states that it retains submissions for 30 days; see its policy for requests relating to its own systems. You can delete first-party cookies through your browser settings. Requests about analytics or advertising data may also need to be directed to the relevant provider.</p>
           <p>If you have any concerns about privacy that this policy does not address, you can reach us directly through our <a href="/contact">Contact page</a>.</p>
 
           <h2>10. Changes to This Policy</h2>
@@ -159,7 +162,7 @@
           <p>If you have questions about this Privacy Policy or how FBviddl handles data, please use our <a href="/contact">Contact page</a> to reach us. We respond to all legitimate privacy enquiries promptly.</p>
           <p>You may also find our <a href="/terms">Terms of Service</a> relevant for understanding the full conditions under which FBviddl operates.</p>
 
-          <p style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border-color); color: var(--text-muted); font-size: 0.875rem;"><strong>Last Updated:</strong> 14 August 2026 &nbsp;|&nbsp; <strong>Effective:</strong> 14 August 2026</p>
+          <p style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border-color); color: var(--text-muted); font-size: 0.875rem;"><strong>Last Updated:</strong> 25 October 2026 &nbsp;|&nbsp; <strong>Effective:</strong> 25 October 2026</p>
         </article>
       </div>
     </section>
