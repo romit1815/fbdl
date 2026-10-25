@@ -111,14 +111,33 @@
     <priority>0.8</priority>
   </url>
  <url>
-    <loc>https://fbviddl.com/hi</loc>
+    <loc>https://fbviddl.com/hi/</loc>
     <lastmod>2026-08-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
    <url>
-    <loc>https://fbviddl.com/hi/facebook-reel-downloader</loc>
+    <loc>https://fbviddl.com/hi/facebook-follower-counter/</loc>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://fbviddl.com/hi/facebook-reel-downloader/</loc>
     <lastmod>2026-04-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fbviddl.com/hi/facebook-dp-downloader/</loc>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fbviddl.com/hi/facebook-image-downloader/</loc>
+    <lastmod>2026-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
