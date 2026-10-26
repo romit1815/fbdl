@@ -13,6 +13,8 @@
  * Write a cookie. Default TTL: 7 days.
  * Uses SameSite=Lax; no Secure flag so it works on local file:// too.
  */
+const isHindiCounter = document.documentElement.lang === 'hi';
+
 function setCookie(name, value, days = 7) {
   try {
     const expires = new Date(Date.now() + days * 864e5).toUTCString();
@@ -273,12 +275,12 @@ document.addEventListener('DOMContentLoaded', () => {
           pauseAutoRefresh();
           if (pauseIcon)      pauseIcon.textContent = '▶';
           if (ringSpinner)    ringSpinner.style.animationPlayState = 'paused';
-          if (monitoringSubtext) monitoringSubtext.textContent = 'Live monitoring paused';
+          if (monitoringSubtext) monitoringSubtext.textContent = isHindiCounter ? 'लाइव निगरानी रोक दी गई है' : 'Live monitoring paused';
         } else {
           resumeAutoRefresh();
           if (pauseIcon)      pauseIcon.textContent = '||';
           if (ringSpinner)    ringSpinner.style.animationPlayState = 'running';
-          if (monitoringSubtext) monitoringSubtext.textContent = 'Fetching from Facebook servers';
+          if (monitoringSubtext) monitoringSubtext.textContent = isHindiCounter ? 'Facebook से जानकारी ली जा रही है' : 'Fetching from Facebook servers';
         }
       });
     }
@@ -478,7 +480,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (pageNameEl)        pageNameEl.textContent = pageName;
     if (trackingHandleEl)  trackingHandleEl.textContent = handle;
     if (subtitleHandleEl)  subtitleHandleEl.textContent = handle;
-    if (counterSublabelEl) counterSublabelEl.textContent = `${pageName.toUpperCase()} FOLLOWERS`;
+    if (counterSublabelEl) counterSublabelEl.textContent = isHindiCounter ? `${pageName} के फ़ॉलोअर` : `${pageName.toUpperCase()} FOLLOWERS`;
     if (targetUsernameVal) targetUsernameVal.textContent = handle;
     if (trackingLinkEl) {
       trackingLinkEl.href = currentTargetUrl && currentTargetUrl.startsWith('http')
@@ -520,9 +522,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const delta = smoothedCount - initialFollowerCount;
     if (sessionDeltaVal)  sessionDeltaVal.textContent  = delta >= 0 ? `+${delta}` : `${delta}`;
-    if (pollIterationsVal) pollIterationsVal.textContent = `${pollTicks} ticks`;
+    if (pollIterationsVal) pollIterationsVal.textContent = isHindiCounter ? `${pollTicks} जाँचें` : `${pollTicks} ticks`;
     if (lastVerifiedVal) {
-      lastVerifiedVal.textContent = new Date().toLocaleTimeString('en-US', {
+      lastVerifiedVal.textContent = new Date().toLocaleTimeString(isHindiCounter ? 'hi-IN' : 'en-US', {
         hour: '2-digit', minute: '2-digit', second: '2-digit'
       });
     }
@@ -645,7 +647,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function updateTimerUI() {
-    if (countdownTimer) countdownTimer.textContent = `${Math.max(0, countdownSeconds).toFixed(1)}s`;
+    if (countdownTimer) countdownTimer.textContent = `${Math.max(0, countdownSeconds).toFixed(1)}${isHindiCounter ? ' सेकंड' : 's'}`;
   }
 
   // ─── Loading / Error ─────────────────────────────────────────────────────
@@ -654,10 +656,15 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!submitBtn) return;
     submitBtn.disabled = isLoading;
     if (btnSpinner) btnSpinner.style.display = isLoading ? 'inline-block' : 'none';
-    if (btnText)    btnText.textContent = isLoading ? 'Tracking...' : 'Track';
+    if (btnText)    btnText.textContent = isHindiCounter ? (isLoading ? 'जाँच हो रही है…' : 'ट्रैक करें') : (isLoading ? 'Tracking...' : 'Track');
   }
 
   function showError(msg) {
+    if (isHindiCounter) {
+      msg = /timed out/i.test(msg)
+        ? 'अनुरोध में समय-सीमा पार हो गई। इंटरनेट कनेक्शन जाँचकर फिर कोशिश करें।'
+        : 'Facebook से फ़ॉलोअर संख्या नहीं मिल सकी। लिंक और सार्वजनिक उपलब्धता जाँचकर फिर कोशिश करें।';
+    }
     if (errorMessage) errorMessage.textContent = msg;
     if (errorBox)     errorBox.style.display = 'flex';
   }
@@ -670,7 +677,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ─── Utilities ───────────────────────────────────────────────────────────
 
   function formatNumber(num) {
-    return new Intl.NumberFormat('en-US').format(num);
+    return new Intl.NumberFormat(isHindiCounter ? 'hi-IN-u-nu-latn' : 'en-US').format(num);
   }
 
   function getInitials(name) {
